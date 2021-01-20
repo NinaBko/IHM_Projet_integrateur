@@ -80,7 +80,7 @@
     </div>
     <hr>-->
 
-    <form action="https://qrfx7lea3b.execute-api.eu-west-3.amazonaws.com/dev/project/parameters/" method="post">
+    <!--<form id="new_solution_form">
       <h3>Shift 1:</h3>
       <div class="form-row">
         <div class="form-group col-md-6">
@@ -108,11 +108,74 @@
         <input name="duration" type="number" class="form-control" id="inputTimeout" value="60">
       </div>
       <div class="text-center">
-        <button type="submit" class="btn btn-info">Calculer la solution</button>
+        <button onclick="formNewSolutionSubmit()" id="submitButton" type="submit" class="btn btn-info">Calculer la solution</button>
       </div>
-      
-    </form>
+    </form>-->
+
+    <!--<h3>Shift 1:</h3>
+      <div class=" col-md-6">
+        <label for="example-number-input" class="col-form-label">Nombre de mécaniciens du shift:</label>
+        <input name="meca1" id="inputMeca1" class="form-control" type="number" value="3" id="meca-number1">
+      </div>
+      <div class=" col-md-6">
+        <label for="example-number-input" class="col-form-label">Nombre de contrôleurs qualité du shift:</label>
+        <input name="qual1" id="inputQC1" class="form-control" type="number" value="2" id="qc-number1">
+      </div>
+    <h3>Shift 2:</h3>
+      <div class="col-md-6">
+        <label for="example-number-input" class="col-form-label">Nombre de mécaniciens du shift:</label>
+        <input name="meca2" id="inputMeca2" class="form-control" type="number" value="3" id="meca-number1">
+      </div>
+      <div class=" col-md-6">
+        <label for="example-number-input" class="col-form-label">Nombre de contrôleurs qualité du shift:</label>
+          <input name="qual2" id="inputQC2" class="form-control" type="number" value="2" id="qc-number1">
+      </div>
+      <label for="inputTimeout">Temps du timeout souhaité (en min):</label>
+      <input name="duration" type="number" class="form-control" id="inputTimeout" value="60">
+  </div>-->
+
+  <div class="container">
+    <h3>Shift 1:</h3>
+    <div class="row">
+      <div class="col">
+        <label for="example-number-input" class="col-form-label">Nombre de mécaniciens du shift:</label>
+        <input name="meca1" id="inputMeca1" class="form-control" type="number" value="3">
+      </div>
+      <div class="col">
+        <label for="example-number-input" class="col-form-label">Nombre de contrôleurs qualité du shift:</label>
+        <input name="qual1" id="inputQC1" class="form-control" type="number" value="2">
+      </div>
+    </div>
   </div>
+  <hr>
+
+  <div class="container">
+    <h3>Shift 2:</h3>
+    <div class="row">
+      <div class="col">
+        <label for="example-number-input" class="col-form-label">Nombre de mécaniciens du shift:</label>
+        <input name="meca2" id="inputMeca2" class="form-control" type="number" value="3">
+      </div>
+      <div class="col">
+        <label for="example-number-input" class="col-form-label">Nombre de contrôleurs qualité du shift:</label>
+          <input name="qual2" id="inputQC2" class="form-control" type="number" value="2">
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container">
+    <label for="inputTimeout">Temps du timeout souhaité (en min):</label>
+    <input name="duration" type="number" class="form-control" id="inputTimeout" value="60">
+  </div>
+  <hr>
+
+  <div>
+    <div class="text-center">
+      <button onclick="formNewSolutionSubmit()" id="submitButton" type="submit" class="btn btn-info">Calculer la solution</button>
+    </div>
+  </div>
+</div>
 
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -123,3 +186,5 @@
 </body>
 
 </html>
+
+

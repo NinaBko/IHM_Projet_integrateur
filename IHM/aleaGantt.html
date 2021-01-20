@@ -34,7 +34,7 @@
             <a class="nav-link" href="startResolution.html">Calcul solution</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="GANTT.html">GANTT</a>
+            <a class="nav-link" href="#">GANTT</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link" href="#">Aléa
@@ -50,15 +50,15 @@
   </nav>
 
   <!-- Page Content -->
-  <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron">
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
   <div class="container" class="text-center">
     <div class="text-center">
       <h2>Prise en compte d'un aléa dans un projet existant:</h2>
     </div>
   </div>
-  </div>
-  <!--
+</div>
+
   <div class="container">
     <h3>Retard de livraison</h3>
     <label for="example-number-input" class="col-form-label">Date du retard:</label>
@@ -70,39 +70,36 @@
     <label for="example-number-input" class="col-form-label">Référence du produit:</label>
     <input class="form-control" type="text" value="" id="example-number-input">
   </div>
-  <hr>-->
+  <hr>
 
   <div class="container">
-    <form id="alea_form" method="post" action="">
-      <div class="form-group">
-        <label for="exampleFormControlSelect1">Type:</label>
-        <select name="type" class="form-control" id="exampleFormControlSelect1">
-          <option selected value="delay">delay</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="modelInput">Réfèrence du modèle:</label>
-        <input name="product" type="text" class="form-control" id="modelRef" value="W10111C">
-      </div>
-      <div class="form-group">
-        <label for="dateInput">Date du retard:</label>
-        <input name="date" type="date" class="form-control" id="dateInput" value="2019-04-02">
-      </div>
-      <div class="text-center">
-        <button onclick="formAleaSubmit()" id="submitButtonAlea" class="btn btn-info">Calculer la solution</button>
-      </div>
-    </form>
+    <div class="text-center">
+      <!--<label for="dropdownMenuButton" class="col-form-label">Veuillez sélectionner l'aléa rencontré:</label>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>-->
+    </div>
+
+    <div>
+
+
+  <hr>
+  <div>
+    <div class="text-center">
+      <button type="button" id="myButtonNewGANTT" class="btn btn-info">Recalculer la solution</button>
+    </div>
   </div>
 
-
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
 
   <script src="vendor/js/main.js"></script>
 
