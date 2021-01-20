@@ -24,10 +24,10 @@ function formNewSolutionSubmit(){
     var urlLink = "https://qrfx7lea3b.execute-api.eu-west-3.amazonaws.com/dev/project/parameters/";
     urlLink = urlLink + $("#inputMeca1").val() + "/" + $("#inputQC1").val() + "/" + $("#inputMeca2").val() + "/" +$("#inputQC2").val() + "/" + $("#inputTimeout").val();
 
-    alert(urlLink)
+    //alert(urlLink)
     $.post(urlLink,{},
     function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
+        alert("Calcul lancé !");
     });
 }
 
