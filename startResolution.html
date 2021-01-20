@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Outil plannification</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/css/main.css"rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Outil plannification</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Calcul solution
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="GANTT.html">GANTT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aleaGantt.html">Aléa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Aide</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <!-- Main jumbotron for a primary marketing message or call to action -->
+  <div class="jumbotron">
+    <div class="container" class="text-center">
+      <div class="text-center">
+        <h2>Plannification d'un nouveau projet:</h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <!--<div class="container">
+      <div class="row">
+        <div class="col">
+          <label for="example-date-input" class="col-form-label">Date du début du projet</label>
+          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+        </div>
+        <div class="col">
+          <label for="example-date-input" class="col-form-label">Date de fin de projet souhaitée</label>
+          <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+        </div>
+      </div>
+    </div>
+    <hr>
+
+    <div class="container">
+      <label for="example-number-input" class="col-form-label">Durée souhaitée du projet</label>
+      <input class="form-control" type="number" value="42" id="example-number-input">
+    </div>
+    <hr>-->
+
+    <form action="https://qrfx7lea3b.execute-api.eu-west-3.amazonaws.com/dev/project/parameters/" method="post">
+      <h3>Shift 1:</h3>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="example-number-input" class="col-form-label">Nombre de mécaniciens du shift:</label>
+          <input name="meca1" id="inputMeca1" class="form-control" type="number" value="3" id="meca-number1">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="example-number-input" class="col-form-label">Nombre de contrôleurs qualité du shift:</label>
+            <input name="qual1" id="inputQC1" class="form-control" type="number" value="2" id="qc-number1">
+        </div>
+      </div>
+      <h3>Shift 2:</h3>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="example-number-input" class="col-form-label">Nombre de mécaniciens du shift:</label>
+          <input name="meca2" id="inputMeca2" class="form-control" type="number" value="3" id="meca-number1">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="example-number-input" class="col-form-label">Nombre de contrôleurs qualité du shift:</label>
+            <input name="qual2" id="inputQC2" class="form-control" type="number" value="2" id="qc-number1">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="inputTimeout">Temps du timeout souhaité (en min):</label>
+        <input name="duration" type="number" class="form-control" id="inputTimeout" value="60">
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-info">Calculer la solution</button>
+      </div>
+      
+    </form>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="vendor/js/main.js"></script>
+
+</body>
+
+</html>
